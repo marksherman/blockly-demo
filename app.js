@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var expressSession = require('express-session');
 var connectRedis = require('connect-redis');
 
-var routes = require('./routes/index');
+//var routes = require('./routes/index');
 
 var app = express();
 
@@ -31,7 +31,7 @@ app.use(expressSession({
     saveUninitialized: true
 }));
 
-app.use('/', routes);
+//app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
